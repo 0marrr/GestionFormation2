@@ -1,0 +1,280 @@
+/* Modern Input Fields */
+.modern-input {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-font-size: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.02), 5, 0, 0, 3);
+}
+
+.modern-input:focused {
+    -fx-border-color: #4CAF50;
+    -fx-effect: dropshadow(gaussian, rgba(76,175,80,0.1), 5, 0, 0, 3);
+}
+
+/* Modern ComboBox */
+.modern-combo {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8;
+    -fx-font-size: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.02), 5, 0, 0, 3);
+}
+
+.modern-combo:hover {
+    -fx-border-color: #BDBDBD;
+}
+
+.modern-combo:focused {
+    -fx-border-color: #4CAF50;
+    -fx-effect: dropshadow(gaussian, rgba(76,175,80,0.1), 5, 0, 0, 3);
+}
+
+/* ComboBox Arrow Button */
+.modern-combo .arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 8 0 0;
+}
+
+.modern-combo .arrow {
+    -fx-background-color: #757575;
+}
+
+/* ComboBox Popup List */
+.modern-combo .list-view {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 3);
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* List Cells */
+.modern-combo .list-cell {
+    -fx-padding: 8 15;
+    -fx-background-color: white;
+    -fx-text-fill: #333333;
+    -fx-font-size: 14;
+}
+
+.modern-combo .list-cell:hover {
+    -fx-background-color: #F5F5F5;
+}
+
+/* Scroll Bar for ComboBox List */
+.modern-combo .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 0 2px;
+}
+
+.modern-combo .scroll-bar .thumb {
+    -fx-background-color: #E0E0E0;
+    -fx-background-radius: 4;
+}
+
+/* Modern & Stylish Table */
+.table-view {
+    -fx-background-color: #f4f4f8;
+    -fx-border-radius: 10px;
+}
+
+.table-cell {
+    -fx-border-color: transparent;
+}
+
+/* Column Header Styling */
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size: 25;
+    -fx-background-color: #2d3b50;
+    -fx-border-radius: 10px 10px 0px 0px;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    -fx-padding: 5px 0 5px 0;
+}
+
+/* Table Cell Styling */
+.table-view .cell {
+    -fx-cell-size: 35;
+    -fx-text-fill: #333333;
+    -fx-font-size: 14;
+    -fx-alignment: CENTER;
+    -fx-border-color: transparent;
+}
+
+/* Row Styling */
+.table-row-cell {
+    -fx-background-color:  #F5F7FB;
+    -fx-border-radius: 5px;
+    -fx-padding: 3px;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #eef0f5;
+    -fx-cursor: hand;
+}
+
+/* Selected Row Styling */
+.table-row-cell:selected {
+    -fx-background-color: #bdc8d9;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+/* Smooth Borders */
+.table-view .column-header-background {
+    -fx-background-radius: 10px 10px 0px 0px;
+}
+
+/* Scroll Bars */
+.table-view .scroll-bar:vertical,
+.table-view .scroll-bar:horizontal {
+    -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0;
+}
+
+.table-view .scroll-bar:vertical .thumb,
+.table-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: #e1dede;
+}
+
+/* Enhanced Search Field */
+.search-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 5;
+    -fx-padding: 8 15 8 35;
+    -fx-font-size: 14;
+    -fx-background-image: url('icons/search.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 12px center;
+    -fx-background-size: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.03), 5, 0, 0, 2);
+}
+
+/* Button Positioning */
+.success-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-font-size: 14;
+}
+
+.danger-button {
+    -fx-background-color: #F44336;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-font-size: 14;
+}
+
+.info-button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-font-size: 14;
+}
+
+.button:hover {
+    -fx-opacity: 0.95;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+/* CTA Button Styling */
+.cta-button {
+    -fx-background-color: linear-gradient(to right, #4CAF50 0%, #45a049 100%);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 24px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(76,175,80,0.3), 8, 0, 0, 2);
+    -fx-transition: all 0.3s ease;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+}
+
+.cta-button:hover {
+    -fx-background-color: linear-gradient(to right, #45a049 0%, #3d8b40 100%);
+    -fx-effect: dropshadow(gaussian, rgba(76,175,80,0.4), 10, 0, 0, 3);
+    -fx-translate-y: -1px;
+}
+
+.cta-button:pressed {
+    -fx-background-color: linear-gradient(to right, #3d8b40 0%, #357c38 100%);
+    -fx-effect: dropshadow(gaussian, rgba(76,175,80,0.2), 5, 0, 0, 1);
+    -fx-translate-y: 1px;
+}
+
+.cta-button:focused {
+    -fx-border-width: 2px;
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-border-radius: 6px;
+}
+
+/* Transparent ScrollPane with Dashed Border */
+.transparent-scroll {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+}
+
+.transparent-scroll .scroll-pane {
+    -fx-border-color: #E0E0E0;
+    -fx-border-width: 1px;
+    -fx-border-style: segments(5, 5) line-cap round;
+    -fx-border-radius: 5px;
+    -fx-background-color: transparent;
+}
+
+.transparent-scroll .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.transparent-scroll .scroll-bar:vertical,
+.transparent-scroll .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+    -fx-pref-height: 8px;
+}
+
+.transparent-scroll .scroll-bar .thumb {
+    -fx-background-color: #C0C0C0;
+    -fx-background-radius: 4px;
+    -fx-opacity: 0.5;
+}
+
+.transparent-scroll .scroll-bar .thumb:hover {
+    -fx-opacity: 0.8;
+}
+
+.transparent-scroll .scroll-bar .increment-button,
+.transparent-scroll .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.transparent-scroll .scroll-bar .increment-arrow,
+.transparent-scroll .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}

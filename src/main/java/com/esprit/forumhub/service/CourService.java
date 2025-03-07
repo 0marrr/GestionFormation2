@@ -50,15 +50,16 @@ public class CourService {
     }
 
     // Update a Course
-    public void updateCour(int id, String titre, String description, String pdfPath, String videoPath, String imagePath) throws SQLException {
-        String query = "UPDATE cours SET titre = ?, description = ?, pdfPath = ?, videoPath = ?, imagePath = ? WHERE id = ?";
+    public void updateCour(int id, String titre, String description, String pdfPath, String videoPath, String imagePath, int formationId) throws SQLException {
+        String query = "UPDATE cours SET titre = ?, description = ?, pdfPath = ?, videoPath = ?, imagePath = ?, formation_id = ? WHERE id = ?";
         try (PreparedStatement pst = cnx.prepareStatement(query)) {
             pst.setString(1, titre);
             pst.setString(2, description);
             pst.setString(3, pdfPath);
             pst.setString(4, videoPath);
             pst.setString(5, imagePath);
-            pst.setInt(6, id);
+            pst.setInt(6, formationId);
+            pst.setInt(7, id);
             pst.executeUpdate();
         }
     }

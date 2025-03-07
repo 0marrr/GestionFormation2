@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #EAF2F8;" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.forumhub.controller.AddEditFormationController">
+
+    <StackPane alignment="CENTER" prefHeight="450.0" prefWidth="600.0">
+        <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 30; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);">
+
+            <!-- Title Section -->
+            <HBox alignment="CENTER" spacing="10.0">
+                <ImageView fx:id="imageOperation" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/edit.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="titleLabel" style="-fx-text-fill: #34495E; -fx-font-size: 24px; -fx-font-weight: bold;" text="Add/Edit Formation" />
+            </HBox>
+
+            <!-- Form Fields -->
+            <VBox spacing="15.0" alignment="CENTER">
+
+                <!-- Titre Field -->
+                <HBox spacing="10.0" alignment="CENTER">
+                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../image/titre.png" />
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="titreField" focusTraversable="false" prefWidth="350.0" promptText="Enter Title" styleClass="modern-input" />
+                </HBox>
+
+                <!-- Duree Field -->
+                <HBox spacing="10.0" alignment="CENTER">
+                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../image/timedate.png" />
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="dureeField" focusTraversable="false" prefWidth="350.0" promptText="Enter Duration" styleClass="modern-input" />
+                </HBox>
+
+                <!-- Niveau Field -->
+                <HBox spacing="10.0" alignment="CENTER">
+                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../image/level.png" />
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="niveauField" focusTraversable="false" prefWidth="350.0" promptText="Enter Level" styleClass="modern-input" />
+                </HBox>
+
+                <!-- Contenu Field -->
+                <HBox spacing="10.0" alignment="CENTER">
+                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../image/description.png" />
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="contenuField" focusTraversable="false" prefWidth="350.0" promptText="Enter Content" styleClass="modern-input" />
+                </HBox>
+            </VBox>
+
+            <!-- Buttons -->
+            <HBox alignment="CENTER" spacing="15.0">
+                <Button onAction="#handleSave" prefHeight="40.0" prefWidth="120.0" styleClass="success-button" text="Save" />
+                <Button onAction="#handleCancel" prefHeight="40.0" prefWidth="120.0" styleClass="danger-button" text="Cancel" />
+            </HBox>
+        </VBox>
+    </StackPane>
+</AnchorPane>

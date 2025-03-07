@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #EAF2F8;" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.forumhub.controller.AddEditCoursController">
+
+    <StackPane alignment="CENTER" prefHeight="500.0" prefWidth="600.0">
+        <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 30; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);">
+
+            <!-- Title Section -->
+            <HBox alignment="CENTER" spacing="10.0">
+                <ImageView fx:id="iconOperation" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/edit.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="titleLabel" style="-fx-text-fill: #34495E; -fx-font-size: 24px; -fx-font-weight: bold;" text="Add/Edit Cours" />
+            </HBox>
+
+            <!-- Form Fields -->
+            <VBox alignment="CENTER" spacing="15.0">
+
+                <!-- Titre Field -->
+                <HBox alignment="CENTER" spacing="10.0">
+                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../image/titre.png" />
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="titreField" focusTraversable="false" prefWidth="350.0" promptText="Enter Title" styleClass="modern-input" />
+                </HBox>
+
+                <!-- Description Field -->
+                <HBox alignment="CENTER" spacing="10.0">
+                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../image/description.png" />
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="descriptionField" focusTraversable="false" prefWidth="350.0" promptText="Enter Description" styleClass="modern-input" />
+                </HBox>
+
+                <!-- PDF Path Field -->
+                <HBox alignment="CENTER" spacing="10.0">
+                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../image/pdf.png" />
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="pdfPathField" focusTraversable="false" prefWidth="250.0" promptText="Enter PDF Path" styleClass="modern-input" />
+                    <Button onAction="#handlePdfBrowse" styleClass="upload-button" text="Parcourir" />
+                </HBox>
+
+                <!-- Video Path Field -->
+                <HBox alignment="CENTER" spacing="10.0">
+                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../image/video.png" />
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="videoPathField" focusTraversable="false" prefWidth="350.0" promptText="Enter Video Path" styleClass="modern-input" />
+                </HBox>
+
+                <!-- Image Path Field -->
+                <HBox alignment="CENTER" spacing="10.0">
+                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../image/photo.png" />
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="imagePathField" focusTraversable="false" prefWidth="250.0" promptText="Enter Image Path" styleClass="modern-input" />
+                    <Button onAction="#handleImageBrowse" styleClass="upload-button" text="Parcourir" />
+                </HBox>
+
+                <!-- Formation ComboBox -->
+                <HBox alignment="CENTER" spacing="10.0">
+                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../image/education.png" />
+                        </image>
+                    </ImageView>
+                    <ComboBox fx:id="formationComboBox" focusTraversable="false" prefWidth="350.0" promptText="Select Formation" styleClass="modern-input" />
+                </HBox>
+            </VBox>
+
+            <!-- Buttons -->
+            <HBox alignment="CENTER" spacing="15.0">
+                <Button onAction="#handleSave" prefHeight="40.0" prefWidth="120.0" styleClass="success-button" text="Save" />
+                <Button onAction="#handleCancel" prefHeight="40.0" prefWidth="120.0" styleClass="danger-button" text="Cancel" />
+            </HBox>
+        </VBox>
+    </StackPane>
+</AnchorPane>

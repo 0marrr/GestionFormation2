@@ -156,7 +156,7 @@
     -fx-border-radius: 5;
     -fx-padding: 8 15 8 35;
     -fx-font-size: 14;
-    -fx-background-image: url('icons/search.png');
+    -fx-background-image: url('image/search.png');
     -fx-background-repeat: no-repeat;
     -fx-background-position: 12px center;
     -fx-background-size: 16px;
@@ -192,6 +192,26 @@
     -fx-background-radius: 6;
     -fx-cursor: hand;
     -fx-font-size: 14;
+}
+
+.upload-button {
+    -fx-background-color: #2D3436; /* Dark charcoal color */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 20; /* Reduced padding */
+    -fx-background-radius: 15; /* Slightly smaller radius for a more compact look */
+    -fx-cursor: hand;
+    -fx-font-size: 14; /* Reduced font size */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 2, 2); /* Soft shadow for depth */
+    -fx-transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.upload-button:hover {
+    -fx-background-color: #636E72; /* Lighter grey for hover effect */
+}
+
+.upload-button:pressed {
+    -fx-background-color: #4B565E; /* Darker grey on click */
 }
 
 .button:hover {
@@ -241,7 +261,6 @@
 .transparent-scroll .scroll-pane {
     -fx-border-color: #E0E0E0;
     -fx-border-width: 1px;
-    -fx-border-style: segments(5, 5) line-cap round;
     -fx-border-radius: 5px;
     -fx-background-color: transparent;
 }
@@ -277,4 +296,24 @@
 .transparent-scroll .scroll-bar .decrement-arrow {
     -fx-shape: " ";
     -fx-padding: 0;
+}
+
+.pagination-button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-padding: 5px 10px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.pagination-button:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+.pagination-button.active {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-border-color: #007bff;
 }
